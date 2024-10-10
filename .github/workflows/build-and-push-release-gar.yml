@@ -24,7 +24,7 @@ jobs:
         uses: google-github-actions/setup-gcloud@v2
       - name: Configure Docker Client
         run: |-
-          gcloud auth configure-docker ${{ secrets.GAR_REPOSITORY }} --quiet #authenticate to gar
+          gcloud auth configure-docker ${{ secrets.GAR_REPOSITORY }} --quiet # authenticate to gar
       - name: Clean Docker images
         run: |-
           echo "Available storage before cleaning:"
